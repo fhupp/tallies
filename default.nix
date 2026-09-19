@@ -10,7 +10,6 @@ let
   inherit (pkgs) callPackage;
   withPython = callPackage ./nix/withPython.nix {
     inherit renderers;
-    inherit callPackage;
   };
 
   # List of supported python versions

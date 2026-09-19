@@ -60,7 +60,7 @@
         let
           pkgs = import nixpkgs {
             inherit system;
-            overlays = [ (import rust-overlay) ];
+            overlays = [ rust-overlay.overlays.default ];
           };
           rust-toolchain = pkgs.rust-bin.fromRustupToolchainFile rust-toolchain-file;
         in

@@ -21,7 +21,9 @@ shell {
 
   base-python = pkgs.python3;
 
-  devDeps = [ ];
+  devDeps = with pkgs; [
+    just
+  ];
   buildDeps = with pkgs; [ maturin ];
   runtimeDeps = [ ];
 }

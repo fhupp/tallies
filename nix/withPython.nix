@@ -1,7 +1,6 @@
 # Build a package for a given version of python
 {
   renderers,
-  callPackage,
 }:
 python:
 let
